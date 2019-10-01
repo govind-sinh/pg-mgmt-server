@@ -15,9 +15,6 @@ app.use(helmet());
 app.use(cors());
 app.use(require('./route.js'));
 
-app.listen(3000, () => {
-    console.log(`Example app listening on port 3000!`);
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`);
 });
-// http.createServer(app).listen(app.get('port'), function () {
-//     console.log('Express server listening on port ' + app.get('port') +" in "+app.get('env')+" mode");
-// });
